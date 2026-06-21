@@ -266,6 +266,7 @@ a{color:inherit;text-decoration:none;}
 }
 .sb-item.sb-ext .sb-label{font-size:11px;}
 
+
 /* === 本品影音浮動鈕 + 複製連結 Toast (wy-aux v1) === */
 .float-yt{
   position:fixed;right:22px;bottom:80px;z-index:121;
@@ -775,9 +776,12 @@ if(sbBrand)sbBrand.addEventListener('click',function(e){
 </script>
 <script id="wy-aux">
 (function(){
-  /* (1) 浮動「本品影音」鈕 · 隨閱讀切換 */
+  /* (1) 浮動「品名 · 影音」鈕 · 隨閱讀切換 */
   var floatYt = document.getElementById('floatYt');
   var CN = ['一','二','三','四','五','六','七','八','九','十'];
+  /* 短品名（與側欄 sb-label 一致），動態填入鈕文字 */
+  var SB_NAMES = ['放光釋論','廣長舌相','師子三昧','以動破堅','地動悅心',
+                  '八難頓脫','宿命四生','十方佛土','神力治患','等心十善'];
   function getYtUrls(){
     var arr = [];
     document.querySelectorAll('.toc-yt').forEach(function(a){ arr.push(a.href); });
@@ -796,7 +800,9 @@ if(sbBrand)sbBrand.addEventListener('click',function(e){
     }
     if(idx >= 0 && urls[idx]){
       floatYt.href = urls[idx];
-      floatYt.title = '本品影音解說（第' + CN[idx] + '品）';
+      floatYt.title = '第' + CN[idx] + '品 ' + SB_NAMES[idx] + ' · 影音解說';
+      var txEl = floatYt.querySelector('.float-yt-text');
+      if(txEl) txEl.textContent = SB_NAMES[idx] + ' 影音';
       floatYt.classList.add('show');
     } else {
       floatYt.classList.remove('show');
