@@ -266,40 +266,63 @@ a{color:inherit;text-decoration:none;}
 }
 .sb-item.sb-ext .sb-label{font-size:11px;}
 
-/* wy-cross-nav-css v1 */
-/* ── 跨卷導覽（側欄底部）── */
-.sb-cross{display:flex;flex-direction:column;align-items:center;gap:8px;
-  width:100%;margin:18px 0 4px;padding:18px 4px 6px;position:relative;}
-.sb-cross::before{content:"";position:absolute;top:0;left:14%;right:14%;
-  height:1px;background:linear-gradient(90deg,
-    transparent 0%,rgba(184,134,11,.15) 18%,
-    var(--gold,#b8860b) 50%,
-    rgba(184,134,11,.15) 82%,transparent 100%);
-  box-shadow:0 1px 0 rgba(212,168,75,.18);}
-.sb-cross::after{content:"";position:absolute;top:6px;left:38%;right:38%;
-  height:1px;background:linear-gradient(90deg,
-    transparent,rgba(184,134,11,.55),transparent);}
-.sb-x{display:flex;flex-direction:column;align-items:center;gap:3px;
-  text-decoration:none;color:var(--sbText,#d4c4a8);padding:4px 4px;width:100%;
-  border-radius:7px;transition:all .25s;}
-.sb-x:hover{background:rgba(184,134,11,.14);transform:translateY(-1px);}
-.sb-x-glyph{width:30px;height:30px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  border:1.2px solid rgba(212,196,168,.55);
-  color:var(--goldL,#d4a84b);font-family:"Noto Sans TC",sans-serif;font-size:14px;
-  background:rgba(184,134,11,.08);transition:all .25s;}
-.sb-x:hover .sb-x-glyph{border-color:var(--gold,#b8860b);color:#fff;
-  background:linear-gradient(135deg,var(--gold,#b8860b),var(--goldL,#d4a84b));
-  box-shadow:0 0 10px rgba(184,134,11,.5);}
-.sb-x-label{font-family:"Noto Sans TC",sans-serif;font-size:10.5px;
-  letter-spacing:1.2px;color:var(--sbText,#d4c4a8);opacity:.78;text-align:center;
-  line-height:1.25;}
-.sb-x:hover .sb-x-label{color:var(--goldL,#d4a84b);opacity:1;}
-.sb-x-hub .sb-x-glyph{background:linear-gradient(135deg,
-  rgba(184,134,11,.22),rgba(212,168,75,.18));
-  border-color:rgba(212,168,75,.55);color:var(--goldL,#d4a84b);font-size:13px;
-  font-weight:700;letter-spacing:1px;}
-
+/* === 本品影音浮動鈕 + 複製連結 Toast (wy-aux v1) === */
+.float-yt{
+  position:fixed;right:22px;bottom:80px;z-index:121;
+  display:none;
+  align-items:center;gap:9px;
+  padding:9px 17px 9px 11px;
+  background:linear-gradient(135deg,#2a2218,#3d3225);
+  color:#d4a84b;
+  border:1px solid rgba(184,134,11,.55);
+  border-radius:26px;
+  text-decoration:none;
+  font-family:"Noto Sans TC",sans-serif;
+  font-size:13.5px;font-weight:500;letter-spacing:3px;
+  box-shadow:0 4px 16px rgba(0,0,0,.32);
+  cursor:pointer;
+  transition:transform .18s ease,background .18s ease,color .18s ease,box-shadow .18s ease;
+}
+.float-yt.show{display:inline-flex;}
+.float-yt:hover{
+  background:linear-gradient(135deg,#3d3225,#5a4434);
+  color:#fff;
+  transform:translateY(-2px);
+  box-shadow:0 6px 22px rgba(184,134,11,.32);
+}
+.float-yt-icon{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:24px;height:24px;background:#ff0000;color:#fff;
+  border-radius:50%;flex-shrink:0;font-size:0;
+}
+.float-yt-icon::before{
+  content:"";display:block;
+  width:0;height:0;
+  border-left:8px solid #fff;
+  border-top:5px solid transparent;
+  border-bottom:5px solid transparent;
+  margin-left:2px;
+}
+@media(max-width:600px){
+  .float-yt{bottom:74px;right:14px;padding:8px 13px 8px 9px;
+    font-size:12px;letter-spacing:2px;}
+  .float-yt-text{display:none;}
+}
+.wy-toast{
+  position:fixed;left:50%;bottom:28px;
+  transform:translateX(-50%) translateY(18px);
+  z-index:9999;
+  background:rgba(30,26,20,.95);color:#d4a84b;
+  border:1px solid rgba(184,134,11,.5);
+  border-radius:22px;
+  padding:10px 26px;
+  font-family:"Noto Sans TC",sans-serif;
+  font-size:13.5px;letter-spacing:3px;
+  box-shadow:0 4px 22px rgba(0,0,0,.4);
+  opacity:0;pointer-events:none;
+  transition:opacity .28s ease,transform .28s ease;
+}
+.wy-toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
 </style>
 <meta content="v2-silent" name="wy-full-protection"/>
 <meta content="noai" name="GPTBot"/>
@@ -426,22 +449,7 @@ a{color:inherit;text-decoration:none;}
 <a class="sb-item" data-ch="8" href="#ch-8"><span class="sb-circle" data-wytext="kvyG"></span><span class="sb-label" data-wytext="kvSsgvfDjNT/kPDq"></span></a>
 <a class="sb-item" data-ch="9" href="#ch-9"><span class="sb-circle" data-wytext="k8Cw"></span><span class="sb-label" data-wytext="kNyzgevhjtvfk+7W"></span></a>
 <a class="sb-item" data-ch="10" href="#ch-10"><span class="sb-circle" data-wytext="kvSs"></span><span class="sb-label" data-wytext="kNSkgd75jeTlkPrx"></span></a>
-</nav>
-  <!-- wy-cross-nav v1 -->
-  <div class="sb-cross">
-    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-7/" title="第七卷">
-      <span class="sb-x-glyph">←</span>
-      <span class="sb-x-label">卷七</span>
-    </a>
-    <a class="sb-x sb-x-hub" href="https://weiwen0925.github.io/dazhidulun-0/" title="大智度論門頁">
-      <span class="sb-x-glyph">智</span>
-      <span class="sb-x-label">門頁</span>
-    </a>
-    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-9/" title="第九卷">
-      <span class="sb-x-glyph">→</span>
-      <span class="sb-x-label">卷九</span>
-    </a>
-  </div>
+<div class="sb-divider"></div><a class="sb-item sb-ext" href="https://weiwen0925.github.io/dazhidulun-7/" rel="noopener noreferrer" target="_blank" title="第七卷"><span class="sb-circle">七</span><span class="sb-label">第七卷</span></a><a class="sb-item sb-ext" href="https://weiwen0925.github.io/dazhidulun-9/" rel="noopener noreferrer" target="_blank" title="第九卷"><span class="sb-circle">九</span><span class="sb-label">第九卷</span></a><a class="sb-item sb-ext" href="https://weiwen0925.github.io/dazhidulun-0/" rel="noopener noreferrer" target="_blank" title="門頁"><span class="sb-circle">門</span><span class="sb-label">門頁</span></a></nav>
 </aside>
 <main class="main">
 <div class="site-hero">
@@ -511,7 +519,7 @@ a{color:inherit;text-decoration:none;}
     </div>
 </div>
 </main>
-<button aria-label="回到頂部" id="backTop">↑</button>
+<button aria-label="回到頂部" id="backTop">↑</button><a aria-label="YouTube 本品影音" class="float-yt" href="#" id="floatYt" rel="noopener noreferrer" target="_blank" title="本品影音"><span class="float-yt-icon"></span><span class="float-yt-text">本品影音</span></a>
 <script>
 /* ── 閱讀進度 ── */
 var rpFill=document.getElementById('rpFill');
@@ -765,5 +773,175 @@ if(sbBrand)sbBrand.addEventListener('click',function(e){
   }
 })();
 </script>
-</body>
+<script id="wy-aux">
+(function(){
+  /* (1) 浮動「本品影音」鈕 · 隨閱讀切換 */
+  var floatYt = document.getElementById('floatYt');
+  var CN = ['一','二','三','四','五','六','七','八','九','十'];
+  function getYtUrls(){
+    var arr = [];
+    document.querySelectorAll('.toc-yt').forEach(function(a){ arr.push(a.href); });
+    return arr;
+  }
+  function update(){
+    if(!floatYt) return;
+    var chs = document.querySelectorAll('section.chapter');
+    if(!chs.length) return;
+    var urls = getYtUrls();
+    if(!urls.length) return;
+    var idx = -1;
+    var th = window.innerHeight * 0.35;
+    for(var i=0;i<chs.length;i++){
+      if(chs[i].getBoundingClientRect().top < th) idx = i;
+    }
+    if(idx >= 0 && urls[idx]){
+      floatYt.href = urls[idx];
+      floatYt.title = '本品影音解說（第' + CN[idx] + '品）';
+      floatYt.classList.add('show');
+    } else {
+      floatYt.classList.remove('show');
+    }
+  }
+  window.addEventListener('scroll', update, {passive:true});
+  window.addEventListener('resize', update);
+  if(window.__wyReady && typeof window.__wyReady.then === 'function'){
+    window.__wyReady.then(function(){ setTimeout(update, 400); });
+  } else if(document.readyState==='complete'){
+    setTimeout(update, 600);
+  } else {
+    window.addEventListener('load', function(){ setTimeout(update, 400); });
+  }
+
+  /* 主頁全域 Toast: 給 iframe 子腳本呼叫 */
+  window.wyShowToast = function(msg){
+    var t = document.getElementById('wyToast');
+    if(!t){
+      t = document.createElement('div');
+      t.id = 'wyToast';
+      t.className = 'wy-toast';
+      document.body.appendChild(t);
+    }
+    t.textContent = '✓  ' + (msg || '已複製');
+    t.classList.add('show');
+    if(t._h) clearTimeout(t._h);
+    t._h = setTimeout(function(){ t.classList.remove('show'); }, 1700);
+  };
+
+  /* (2) iframe 解碼後注入「複製本節連結」鈕 */
+  var COPY_CSS = ''
+    + '.wy-copy{'
+    +   'display:inline-flex;align-items:center;justify-content:center;'
+    +   'width:24px;height:24px;margin-left:12px;vertical-align:middle;'
+    +   'border:1px solid rgba(184,134,11,.45);border-radius:7px;'
+    +   'background:rgba(255,253,247,.7);color:#8b5e3c;'
+    +   'cursor:pointer;opacity:.5;padding:0;'
+    +   'transition:opacity .22s,background .22s,border-color .22s,'
+    +     'color .22s,transform .14s;'
+    + '}'
+    + 'h2:hover .wy-copy{opacity:.85;}'
+    + '.wy-copy:hover{opacity:1!important;background:#b8860b;'
+    +   'border-color:#b8860b;color:#fff;}'
+    + '.wy-copy:active{transform:scale(.92);}'
+    + '.wy-copy.wy-copied{background:#5a4434;border-color:#5a4434;'
+    +   'color:#fff;opacity:1!important;}'
+    + '.wy-copy svg{display:block;pointer-events:none;}'
+  ;
+  var COPY_ICON = '<svg viewBox="0 0 24 24" width="13" height="13" fill="none"'
+    + ' stroke="currentColor" stroke-width="2.2" stroke-linecap="round"'
+    + ' stroke-linejoin="round">'
+    + '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>'
+    + '<path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>'
+    + '</svg>';
+  var BASE_URL = 'https://weiwen0925.github.io/dazhidulun-8/';
+
+  function enhanceIframe(iframe){
+    try{
+      var doc = iframe.contentDocument;
+      if(!doc || !doc.body) return false;
+      if(doc.body.getAttribute('data-wy-enhanced')) return true;
+      if(doc.body.childNodes.length === 0) return false;
+      var section = iframe.parentElement;
+      while(section && !(section.tagName === 'SECTION'
+            && /(^|\s)chapter(\s|$)/.test(section.className||''))){
+        section = section.parentElement;
+      }
+      if(!section) return false;
+      var m = (section.id || '').match(/ch-(\d+)/);
+      if(!m) return false;
+      var N = +m[1];
+      if(!doc.getElementById('wy-copy-style')){
+        var st = doc.createElement('style');
+        st.id = 'wy-copy-style';
+        st.textContent = COPY_CSS;
+        (doc.head || doc.documentElement).appendChild(st);
+      }
+      var chs = doc.querySelectorAll('section.chapter');
+      chs.forEach(function(ch, mi){
+        var M = mi + 1;
+        var h2s = ch.querySelectorAll('h2');
+        h2s.forEach(function(h, ki){
+          if(h.querySelector('.wy-copy')) return;
+          var K = ki + 1;
+          var btn = doc.createElement('button');
+          btn.type = 'button';
+          btn.className = 'wy-copy';
+          btn.setAttribute('data-link', '#chapter-' + N + '-' + M + '-' + K);
+          btn.setAttribute('aria-label', 'Copy section link');
+          btn.setAttribute('title', '複製本節連結');
+          btn.innerHTML = COPY_ICON;
+          h.appendChild(btn);
+        });
+      });
+      doc.addEventListener('click', function(e){
+        var b = e.target;
+        while(b && b !== doc.body && !(b.tagName === 'BUTTON'
+              && /(^|\s)wy-copy(\s|$)/.test(b.className || ''))){
+          b = b.parentElement;
+        }
+        if(!b || b === doc.body) return;
+        e.preventDefault(); e.stopPropagation();
+        var url = BASE_URL + b.getAttribute('data-link');
+        var ok = false;
+        try{
+          if(navigator.clipboard && navigator.clipboard.writeText){
+            navigator.clipboard.writeText(url);
+            ok = true;
+          }
+        }catch(err){}
+        if(!ok){
+          try{
+            var ta = doc.createElement('textarea');
+            ta.value = url;
+            ta.style.cssText = 'position:fixed;opacity:0;';
+            doc.body.appendChild(ta);
+            ta.select();
+            doc.execCommand('copy');
+            doc.body.removeChild(ta);
+            ok = true;
+          }catch(err2){}
+        }
+        b.classList.add('wy-copied');
+        setTimeout(function(){ b.classList.remove('wy-copied'); }, 1500);
+        try{ window.wyShowToast('已複製本節連結'); }catch(err3){}
+      }, true);
+      doc.body.setAttribute('data-wy-enhanced', '1');
+      return true;
+    }catch(e){ return false; }
+  }
+
+  function enhanceAll(){
+    document.querySelectorAll('iframe.ch-frame').forEach(enhanceIframe);
+  }
+  if(window.__wyReady && typeof window.__wyReady.then === 'function'){
+    window.__wyReady.then(function(){
+      var ticks = 0;
+      var iv = setInterval(function(){
+        ticks++;
+        enhanceAll();
+        if(ticks > 60) clearInterval(iv);
+      }, 500);
+    });
+  }
+})();
+</script></body>
 </html>
