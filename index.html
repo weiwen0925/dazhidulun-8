@@ -1476,5 +1476,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C8P9:END-->
+<!--WY-C8P10:BEGIN-->
+<style id="wy-c8p10-css">
+.c8p10-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c8p10-fabbox.show{display:block;}
+.c8p10-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c8p10-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c8p10-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c8p10-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c8p10-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c8p10-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c8p10-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c8p10-modal.open{display:flex;}
+.c8p10-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c8p10-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c8p10-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c8p10-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c8p10-close:hover{background:#e3d5b8;}
+.c8p10-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c8p10-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c8p10-tbl th,.c8p10-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c8p10-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c8p10-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c8p10-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c8p10-tbl b{color:#8b2500;}
+.c8p10-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c8p10-note b{color:#8b2500;}
+@media(max-width:900px){.c8p10-fabbox{right:14px;}.c8p10-tbl{font-size:11.5px;}.c8p10-card{padding:26px 14px 16px;}}
+</style>
+<div class="c8p10-fabbox" id="c8p10Box"><button class="c8p10-btn" id="c8p10Btn" type="button" aria-label="開啟全景總表"><span class="c8p10-ic">▦</span><span class="c8p10-ls"><span class="c8p10-l1">本品 · 等心相視十善好慧</span><span class="c8p10-l2">四階修行次第 · 中觀三利器 · 依俗導真空有兩無礙</span></span></button></div><div class="c8p10-modal" id="c8p10Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c8p10-card"><button class="c8p10-close" id="c8p10Close" type="button" aria-label="關閉">×</button><h3>卷八·第十品 等心相視 · 全景總表</h3><p class="sub">卷八・第十品｜等心相視十善業道淨修梵行第三禪樂好慧自守・假名無自性二諦緣起・凡夫至涅槃藍圖</p><table class="c8p10-tbl"><caption>一、經文四階邏輯地圖與中觀三利器（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>經文綱領</td><td>一切眾生皆得等心相視如父如母，等行十善業道淨修梵行，惔然快樂譬如比丘入第三禪，皆得好慧持戒自守不嬈眾生</td></tr><tr><td>四階邏輯地圖</td><td>第一階等心相視（倫理重塑）→第二階十善梵行（因果網絡）→第三階第三禪樂（法喜定位）→第四階好慧自守（終極防護）</td></tr><tr><td>中觀三利器</td><td>假名無自性（名相皆隨緣安立破名言實有之執）、真俗二諦（勝義世俗並觀現象不廢實相不昧）、緣起法（一切法是條件因果動態網絡）</td></tr><tr><td>等心菁英迷思之破</td><td>提問者預設等心是禪定高階產物，論主答是等非禪中等是於一切眾生中無怨無恚，等心非待禪定是假名隨語境落點不同</td></tr><tr><td>二諦圓融平等不廢差異</td><td>世俗諦尊重差異老者如父母長者如兄，勝義諦愛敬平等皆如親親，以心等非以身等，平等不是齊頭抹去人倫差序</td></tr><tr><td>三重解構親屬自性</td><td>時間維度緣起（無量世曾互為父母）、實相維度性空（實法相中本無父母唯著吾我顛倒計）、世俗維度現象（以義相親隨義而立）</td></tr></tbody></table><table class="c8p10-tbl"><caption>二、十善業道乘法與淨修梵行第三禪之辨（第三至六章）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>十善業道乘法矩陣</td><td>身三口四意三，每條善皆沿自作到教他到讚歎到隨喜四重擴張，由獨善其身乘法擴張為遍覆一切眾生的大悲行為矩陣</td></tr><tr><td>意業非業之辨</td><td>後三業道貪瞋邪見非業何以稱業道，少從多故通名業道加能起業又為業生，意念與行為首尾相銜緣起能所相依因果鏈</td></tr><tr><td>底線與高標</td><td>十善之不邪婬仍許在家正婬是世俗道德底線，淨修梵行要求徹斷婬欲是出世清淨高標，世俗不犯規不等於出世間絕對清淨</td></tr><tr><td>內樂緣起方程式</td><td>樂分內樂與涅槃樂，內樂不從五塵生譬如石泉水自中出不從外來，等心加十善加梵行等於清淨無穢等於內樂，清淨本身就是最高享受</td></tr><tr><td>第三禪之辨欲界繫亦不繫</td><td>譬如二字排除色界繫，此樂欲界繫世俗諦一切滿身如煖蘇漬身，亦不繫勝義諦得般若心無所著無相之樂，二諦並觀非三選一</td></tr><tr><td>有受樂與受盡樂之分</td><td>涅槃樂是受的終盡一切五眾盡更不生，第三禪樂是受的滿足現象高峰，兩者不在同一座標軸，唯三禪意識相應樂根能滿足樂</td></tr></tbody></table><table class="c8p10-tbl"><caption>三、好慧終極防護與凡夫至涅槃藍圖（第七八章）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>心理陷阱預判</td><td>苦能生善樂易生貪，人未得樂能作功德既得樂已心著樂多故不作功德，故樂後次第心得好慧，好慧如及時剎車</td></tr><tr><td>戒定慧三身矩陣</td><td>持戒身口善戒身外部防護到自守撿心就善定身內部收攝到不嬈眾生禪中慈等慧身慈悲拔濟，由防護走向拔濟的立體階梯</td></tr><tr><td>破世俗三呵</td><td>婆羅門呵好持戒捨家好持戒是為斷種人、治世道人呵好自守何用獨善其身、世俗武夫呵好不嬈眾生有怨不能報如木人在地，三箭齊射</td></tr><tr><td>價值觀真俗二諦</td><td>世俗諦視為斷種人不理世亂如木頭人，勝義諦卻是好持戒出世清淨好自守內在安定好不嬈眾生絕對不傷害，善惡名相無自性評價隨緣起而變</td></tr><tr><td>大勇健向涅槃門</td><td>頂住世俗譏嫌仍不被斷種避世木人的譏嫌動搖，是擁有被世俗討厭的勇氣，行善身心安隱無所畏難命終無憂無悔向涅槃門</td></tr><tr><td>全景藍圖七站</td><td>凡夫執著名相自性到等心降維解說到十善擴張到梵行昇華到內樂三禪頂峰到好慧防護到涅槃受盡，每站皆以三利器破執而後立</td></tr></tbody></table><p class="c8p10-note">本品經文描繪的佛化國土理想相狀，實為般若行人自心拾級而上的完整修行藍圖。論主以假名無自性、二諦、緣起三件中觀利器，層層拆解提問者的「名相自性見」：等心非禪定專利而是隨語境安立的假名，故凡夫亦可下手；十善業道以自作教他讚歎隨喜四重擴張，乘法般擴及一切眾生；淨修梵行則由世俗底線躍向出世高標。至於「惔然快樂」，論主以石泉自湧喻明內樂不從外來，而「譬如第三禪」一語，更以二諦並觀化解「三選一」的追問——此樂欲界繫亦不繫，是有受樂中的極致而非受盡樂的涅槃。樂後所以必接好慧，正因苦能生善、樂易生貪，好慧遂以戒定慧三身層層上升，更頂住婆羅門、治世道人、世俗武夫的三箭齊射——善惡名相無自性，評價隨緣起而變，世俗所呵者恰是出世所讚者。全品終以「依俗導真，空有兩無礙」收束：不廢世俗差異，而導向勝義實相，這正是龍樹菩薩造論之本懷。</p></div></div>
+<script id="wy-c8p10-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c8p10Btn"),BOX=document.getElementById("c8p10Box"),MODAL=document.getElementById("c8p10Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=9;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#floatYt,.float-yt,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c8p10Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C8P10:END-->
 </body>
 </html>
