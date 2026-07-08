@@ -1264,5 +1264,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C8P5:END-->
+<!--WY-C8P6:BEGIN-->
+<style id="wy-c8p6-css">
+.c8p6-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c8p6-fabbox.show{display:block;}
+.c8p6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c8p6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c8p6-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c8p6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c8p6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c8p6-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c8p6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c8p6-modal.open{display:flex;}
+.c8p6-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c8p6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c8p6-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c8p6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c8p6-close:hover{background:#e3d5b8;}
+.c8p6-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c8p6-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c8p6-tbl th,.c8p6-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c8p6-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c8p6-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c8p6-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c8p6-tbl b{color:#8b2500;}
+.c8p6-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c8p6-note b{color:#8b2500;}
+@media(max-width:900px){.c8p6-fabbox{right:14px;}.c8p6-tbl{font-size:11.5px;}.c8p6-card{padding:26px 14px 16px;}}
+</style>
+<div class="c8p6-fabbox" id="c8p6Box"><button class="c8p6-btn" id="c8p6Btn" type="button" aria-label="開啟全景總表"><span class="c8p6-ic">▦</span><span class="c8p6-ls"><span class="c8p6-l1">本品 · 放光品第六 八難頓脫</span><span class="c8p6-l2">三大底層悖論 · 動力環境本體 · 破邪顯正三段式</span></span></button></div><div class="c8p6-modal" id="c8p6Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c8p6-card"><button class="c8p6-close" id="c8p6Close" type="button" aria-label="關閉">×</button><h3>卷八·第六品 放光品第六 · 全景總表</h3><p class="sub">卷八・第六品｜八難眾生生欲界六天・日照蓮池人動果樹・三界修行條件矩陣・無我輪迴十六句法印</p><table class="c8p6-tbl"><caption>一、三大底層悖論與破邪顯正三段式（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>經文八難頓脫</td><td>三千大千世界中地獄餓鬼畜生及八難處，即時解脫得生天上，從四天王天處乃至他化自在天處，非漸次而是剎那頓脫</td></tr><tr><td>三大底層悖論</td><td>動力悖論（他力自力邊界，佛力能救何須自修）／環境悖論（安逸覺悟取捨，何以獨生欲界）／本體悖論（無我輪迴交錯，誰死誰生）</td></tr><tr><td>破邪顯正三段式</td><td>謬誤拆解（診斷世俗常理謬誤）→機制剖析（以譬喻還原法界客觀運作）→中觀定錨（與緣起空性中道二諦嚴密接榫）</td></tr><tr><td>動力悖論拆解</td><td>提問者誤以為佛力可像魔法般完全覆蓋替代業力法則，若結果皆得救則修福行善顯得多餘，此違背因果相應自然法則</td></tr><tr><td>日照蓮池喻</td><td>日出照蓮華池熟者先開生者未敷，佛先放光明福熟智利先得解脫，福未熟智不利故未得，太陽不偏心蓮華有生熟</td></tr><tr><td>人動果樹喻</td><td>搖樹者是佛提供最大化外緣，果實是眾生修福使自身成熟，若不修行縱佛把樹搖斷亦無法掉入解脫之網</td></tr></tbody></table><table class="c8p6-tbl"><caption>二、環境悖論與三界修行條件矩陣（境界抉擇）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>安逸迷思拆解</td><td>提問者陷入單向度思維誤以為環境越安逸層級越高就越有利於解脫，忽略客觀因果技術門檻與主觀教育目標覺悟而非享樂</td></tr><tr><td>無色界無身難以說法</td><td>無色界眾生捨離色身唯存心識，佛度眾生必借色聲言說為緣，身既不存受法之具全無，即便神通所及亦難令當下得道</td></tr><tr><td>色界禪樂多慧心鈍</td><td>色界四禪諸天耽著禪定之樂久處樂中厭離心薄，禪定之樂令慧心鈍，苦太深則無聞法之力樂太深則無聞法之志</td></tr><tr><td>三界修行條件矩陣</td><td>無色界（無身，不可說法，機率0）、色界（有身禪樂多無厭心，難可得道機率極低）、欲界天（有身可聞法有苦有樂，契機最合機率最高）</td></tr><tr><td>太舒服是修行毒藥</td><td>生於憂患死於安樂，沒有厭離心就生不起求解脫的智慧，色界過度沉溺禪悅而鈍慧，欲界保有苦樂對比令眾生保持清醒覺察</td></tr><tr><td>中道定錨</td><td>離於二邊，避開無身載體與過度貪戀精神快樂兩極端，欲界天即實踐上完美的中道樞紐，感生何界由所動何心決定</td></tr></tbody></table><table class="c8p6-tbl"><caption>三、本體悖論與十六句法印（無我輪迴＋終極統一）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>提問還原</td><td>五眾無常空無我，云何生天人中，誰死誰生，若般若深義取消我則取消被度者也同時取消能度者</td></tr><tr><td>外道實體論之破</td><td>若如外道求索一個固定的實我是不可得，但有假名種種因緣和合而有，超越二元不落兩邊，不僅實我有不可得實我無亦不可得</td></tr><tr><td>幻人相殺喻</td><td>幻術師變幻影互殺人見其死幻術令起人見其生，生死名字有而無實，世界法中實有生死實相法中無有生死</td></tr><tr><td>二諦降維</td><td>世俗諦世界法中實有生死業力相續如火傳薪，勝義諦實相法中無有生死不生死人以大智慧能破生相</td></tr><tr><td>十六句法印四重要義</td><td>不斷不常（佛法相雖空亦復不斷滅）、業不失壞（諸行業不失）、心法俱空（諸法如芭蕉一切從心生）、無念為法印（有念墮魔網無念則得出）</td></tr><tr><td>終極統一全景</td><td>動力悖論證空性大悲不壞緣起、環境悖論證精準緣起導向中道、本體悖論證二諦視角圓融假名與無我，三者同證中道一印</td></tr></tbody></table><p class="c8p6-note">八難眾生頓脫看似佛力全能的展示，實則層層守護著緣起因果的鐵律。動力悖論揭示：佛力是增上緣、自修是親因緣，日照蓮池熟者先開、人動果樹熟者先墮，佛已將外緣推至極致，能否成熟仍是眾生自己的責任——大悲平等而絕對責任不可替代。環境悖論揭示：欲界天並非退而求其次，而是離於二邊的中道樞紐——無色界無身難以說法、色界禪樂多而慧心鈍，唯欲界天保有適度苦樂對比，契機最合。本體悖論則以「幻人相殺」喻與二諦降維，化解「五眾無我何以有生死」的死結：世俗諦上業力相續如火傳薪，勝義諦上從未有實體生滅，十六句法印終歸於「不動是法印」的無念之境。三大悖論看似各異，實則同證一事——神力不越緣起，實相不廢假名，一切收攝於中道一印。</p></div></div>
+<script id="wy-c8p6-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c8p6Btn"),BOX=document.getElementById("c8p6Box"),MODAL=document.getElementById("c8p6Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#floatYt,.float-yt,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c8p6Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C8P6:END-->
 </body>
 </html>
