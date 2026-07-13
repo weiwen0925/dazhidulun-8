@@ -2204,5 +2204,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH8P5:END-->
+<!--WY-BH8P6:BEGIN-->
+<style id="wy-bh8p6-css">
+.bh8p6-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh8p6-fabbox.show{display:block;}
+.bh8p6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh8p6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh8p6-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh8p6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh8p6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh8p6-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh8p6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh8p6-modal.open{display:flex;}
+.bh8p6-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh8p6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh8p6-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh8p6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh8p6-close:hover{background:#dde2e6;}
+.bh8p6-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh8p6-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh8p6-tbl th,.bh8p6-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh8p6-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh8p6-tbl thead th:nth-child(1){width:32%;}.bh8p6-tbl thead th:nth-child(2){width:41%;}.bh8p6-tbl thead th:nth-child(3){width:27%;}
+.bh8p6-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh8p6-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh8p6-guan{background:#eef2f5;color:#37505f;}
+.bh8p6-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh8p6-tbl tbody tr:nth-child(even) td.bh8p6-guan{background:#e8eef2;}
+.bh8p6-tbl tbody tr:nth-child(even) td.bh8p6-qa{background:#e7ecdb;}
+.bh8p6-tbl b{color:#8b2500;}
+.bh8p6-guan b{color:#2f6b5a;}
+.bh8p6-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh8p6-note b{color:#8b2500;}
+@media(max-width:900px){.bh8p6-fabbox{right:14px;}.bh8p6-tbl{font-size:11px;}.bh8p6-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh8p6-fabbox" id="bh8p6Box"><button class="bh8p6-btn" id="bh8p6Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh8p6-ic">譯</span><span class="bh8p6-ls"><span class="bh8p6-l1">本品 · 原文·白話·中觀</span><span class="bh8p6-l2">白話翻譯表</span></span></button></div><div class="bh8p6-modal" id="bh8p6Modal" role="dialog" aria-modal="true"><div class="bh8p6-card"><button class="bh8p6-close" id="bh8p6Close" type="button" aria-label="關閉">×</button><h3>卷八 · 第6品 白話翻譯表（放光品第六 八難頓脫）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷八・第六品・放光品第六 八難頓脫</p><table class="bh8p6-tbl"><caption>放光品第六 八難頓脫 · 原文｜白話翻譯｜中觀概念（共13段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh8p6-src">是三千大千世界中地獄、餓鬼、畜生及八難處，即時解脫，得生天上，從四天王天處乃至他化自在天處。</td><td>這三千大千世界之中，地獄、餓鬼、畜生三惡道以及八難之處（的眾生），當下便得到解脫，往生到天上，從四天王天一直到他化自在天。</td><td class="bh8p6-guan"><b>經文標宗——八難頓脫之總綱</b>——此句以「即時解脫」四字點出全品核心特徵：並非漸次修證，而是剎那頓脫；經文僅言眾生上生欲界六天，不及色界、無色界，正是下文第二番問答所要辨明的關鍵伏筆。</td></tr><tr><td class="bh8p6-qa">問曰：若佛入師子遊戲三昧，能令地獄、餓鬼、畜生及餘八難皆得解脫，生四天處乃至他化自在天者，復何用修福行善，乃得果報？</td><td>有人問：如果佛陀入於師子遊戲三昧，就能使地獄、餓鬼、畜生以及其餘八難之處的眾生都得到解脫，往生四天王天乃至他化自在天，那麼還何必需要修福行善，才能獲得果報呢？</td><td class="bh8p6-guan"><b>動力悖論——他力自力之邊界</b>——此問質疑：若佛力能無條件救拔一切眾生，修福行善的因果法則豈非形同虛設？此為全品第一番問答，代表「因果替代論」的世俗謬見——誤以為神力可以完全覆蓋、替代眾生自身的業力法則。</td></tr><tr><td class="bh8p6-qa">答曰：此如上說：福德多者，見光得度；罪垢深者，地動乃悟。</td><td>回答說：這正如前面所說的：福德深厚的人，只需見到佛的光明便能得度；罪業垢染深重的人，則要等到大地震動才能有所醒悟。</td><td class="bh8p6-guan"><b>總答——佛力非無差別覆蓋</b>——此答立下總綱：同是佛放光動地，眾生受益程度卻各異，得度與否繫於眾生自身的「接收條件」；「見光」與「地動」正是同一場神力示現的兩種接收強度，並非佛有所偏私。</td></tr><tr><td class="bh8p6-src">譬如日出照蓮華池，熟者先開，生者未敷。佛亦如是，先放光明，福熟智利，先得解脫；其福未熟，智心不利，是故未得。佛大慈悲，等度一切，無憎愛也。</td><td>就好比太陽升起照耀蓮花池時，已經成熟的蓮花會先開放，還未成熟的蓮花則尚未綻放。佛陀的情形也是如此，先放出光明，福德已經成熟、智慧銳利的眾生便先獲得解脫；福德尚未成熟、智慧之心尚未銳利的眾生，因此還不能獲得解脫。（但這並非佛有所偏私，）佛以廣大慈悲平等度化一切眾生，心中並無憎愛分別。</td><td class="bh8p6-guan"><b>日照蓮池喻——外緣平等、內因決定</b>——太陽普照一池蓮花，並無偏私，開放與否全在蓮華自身的成熟度；同理，佛之光明是平等施予一切眾生的「增上緣」，眾生福慧成熟與否的「親因緣」才是能否當下得度的關鍵。太陽不偏心，蓮華有生熟，正顯緣起法中因緣具足方能成就果報之理。</td></tr><tr><td class="bh8p6-src">亦如樹果，人動其樹，熟者先墮；佛亦如是，是三千大千世界如樹，動之者佛；先度者果熟，未度者果生。</td><td>又好比果樹一般，人搖動這棵樹時，已經成熟的果實會先掉落。佛陀的情形也是如此，這三千大千世界就如同一棵大樹，搖動它的正是佛陀；先被度化的眾生，就如同已經成熟而掉落的果實，尚未被度化的眾生，則如同尚未成熟的果實。</td><td class="bh8p6-guan"><b>人動果樹喻——佛力推至極致仍待自身成熟</b>——搖樹者是佛，提供最大化的外緣；果實是眾生，修福行善即是讓自身果實成熟。此喻較日照蓮池喻更進一層：若不修行（果生），縱然佛把樹搖斷，亦無法掉入解脫之網——佛力普被而感應繫機，佛已將外緣推至極致，能否成熟仍是眾生自己的責任，此即大悲平等而絕對責任不可替代之理。</td></tr><tr><td class="bh8p6-qa">問曰：何以故善心因緣生欲界天，不生色界及無色界？</td><td>有人問：為什麼由於善心的因緣，眾生只往生到欲界天，卻不能往生到色界或無色界呢？</td><td class="bh8p6-guan"><b>環境悖論——安逸與覺悟之取捨</b>——此問陷入「境界越高越好」的單向度迷思，誤以為環境越安逸、層級越高就越有利於解脫，是全品第二番問答所要拆解的世俗謬見。</td></tr><tr><td class="bh8p6-qa">答曰：佛欲度此眾生令得道證。無色界中以無身故，不可為說法；色界中則無厭心，難可得道，禪樂多故，慧心則鈍。</td><td>回答說：佛陀是想要度化這些眾生，使他們能夠證得道果。無色界的眾生因為沒有色身的緣故，無法為他們說法；色界的眾生則因為沒有厭離之心，難以證得道果，這是因為（色界）禪定之樂太多，導致智慧之心因此變得遲鈍。</td><td class="bh8p6-guan"><b>三界修行條件之判——欲界天為中道樞紐</b>——無色界無身難以說法（機率為零），色界禪樂多而慧心鈍（機率極低），唯獨欲界天有身可聞法、有苦有樂而能生厭離心，契機最合、機率最高。此顯佛之度生方便並非能力不足以送得更高，而是離於二邊、避開無身載體與過度貪戀精神快樂兩極端的教育設計，欲界天正是實踐上完美的中道樞紐。</td></tr><tr><td class="bh8p6-src">復次，佛以神通感動，令此三千大千世界地皆柔軟，眾生心信得歡喜故，生欲界天；不行四禪及四空定故，不得生色、無色界。</td><td>再者，佛陀以神通之力感動大地，使這三千大千世界的地全都變得柔軟，眾生因此心生信心而獲得歡喜，所以往生到欲界天；但因為（這些眾生）並未修習四禪與四空定的緣故，所以不能往生到色界或無色界。</td><td class="bh8p6-guan"><b>因果相稱——感生何界由所動何心決定</b>——「歡喜信敬」之心即是欲界善心，因欲界心動而成善因緣，自然感得欲界天果；未修四禪四空定者，條件不足，緣起法則下自然無法跨界往生色界、無色界。此顯神力不能違背業力的精準對應，無定因則無定果，越級無望，正是緣起法對稱性的具體展現。</td></tr><tr><td class="bh8p6-qa">問曰：五眾無常、空、無我，云何生天人中？誰死誰生者？</td><td>有人問：色、受、想、行、識五蘊既然是無常、空、無我的，那麼又怎麼會有往生天上、人間這回事呢？究竟是誰死去、又是誰往生呢？</td><td class="bh8p6-guan"><b>本體悖論——無我與輪迴之交錯</b>——此問是全品最為究竟的一問：若般若深義徹底取消「我」，則被度化的眾生與能度化的主體豈非都成戲論？此問要求論主同時守住「空」與「有」兩邊，是三大悖論中最深刻的一道。</td></tr><tr><td class="bh8p6-qa">答曰：是事，〈讚菩薩品〉中已廣說，今當略答：汝言「五眾無常、空、無我」者，是般若波羅蜜中，五眾無有常無常、有空無空、有我無我。若如外道求索實我，是不可得；但有假名，種種因緣和合而有，有此名字。</td><td>回答說：這個問題，在〈讚菩薩品〉中已經詳細解說過了，現在只簡略地回答：你所說「五蘊是無常、空、無我」的說法，（其實）在般若波羅蜜的深義中，五蘊是超越「常與無常」、「空與不空」、「我與無我」這些二元對立概念的。如果像外道那樣去尋求一個固定不變的真實自我，那是絕對找不到的；但（現象界）確實有假名安立，是種種因緣和合而有，才有了這樣的名字。</td><td class="bh8p6-guan"><b>超越二元——破除對空的實體化</b>——論主首先糾正提問的前設：真正的般若波羅蜜超越所有二元對立概念，不僅「實我有」不可得，「實我無」亦不可得，不落兩邊方見實相；而現象之所以宛然不滅，唯靠「但有假名，種種因緣和合而有」一語接引，開下文因緣假名之理。</td></tr><tr><td class="bh8p6-src">譬如幻人相殺，人見其死；幻術令起，人見其生；生死名字，有而無實。世界法中實有生死，實相法中無有生死。</td><td>就好比幻術師變化出的幻人互相殘殺，人們見到（幻人）死去；幻術師又施法使他重新站起，人們又見到（幻人）活過來；「生」與「死」這樣的名字，只是有名而沒有實體。在世俗的法則之中，確實有生有死；但在諸法實相之中，卻並沒有真實的生死可得。</td><td class="bh8p6-guan"><b>因緣假名——幻人相殺喻</b>——魔術師變出幻影互殺，觀眾見其「死」，施法後又見其「生」，幻影本無實體，但生死現象歷歷在目；結論是：種種因緣和合而有，生死名字有而無實——「我」並非一個名詞，而是因緣相續的動詞，此即二諦視角圓融假名與無我的具體例證。</td></tr><tr><td class="bh8p6-src">復次，生死人有生死，不生死人無生死。何以故？不生死人以大智慧能破生相。</td><td>再者，還在生死流轉中的人（凡夫）才有生死，已經超越生死的人（聖者）則沒有生死可言。這是什麼緣故呢？因為超越生死的人，是以廣大的智慧破除了「生相」的緣故。</td><td class="bh8p6-guan"><b>二諦降維——世俗諦與勝義諦之分判</b>——世俗諦上業力相續不斷，如火傳薪，凡夫（生死人）迷於此層，故見實有生死；勝義諦上從未有實體誕生，自然無實體消亡，聖者（不生死人）以大智慧徹見此層。生死問題的矛盾根源在於維度的混淆，論主以二諦切開兩個層次，問題即告冰釋。</td></tr><tr><td class="bh8p6-src">佛法相雖空，亦復不斷滅；雖生亦非常，諸行業不失。諸法如芭蕉，一切從心生；若知法無實，是心亦復空。若有人念空，是則非道行；諸法不生滅，念有故失相。有念墮魔網，無念則得出；心動故非道，不動是法印。</td><td>諸法的相狀雖然是空的，卻也並非斷滅無有；雖然有生起之相，卻也並非恆常不變，一切所造作的業行並不會因此而失壞。諸法就如同芭蕉一般（層層剝開終究空無實心），一切現象都是從心而生；若能了知諸法並無真實自性，那麼這個能觀之心自身也同樣是空的。如果有人執著地念取「空」這個概念（把空當作一個實有之物），那便不是真正的修道之行；諸法本來不生不滅，是因為執著於「有」的念頭，才使人迷失了諸法的實相。心中若生起執著之念，便會墮入魔網之中；唯有達到無念的境界，才能真正超脫。心念一旦攀緣浮動，便已不是正道；唯有不動之心，才是真正的法印。</td><td class="bh8p6-guan"><b>十六句法印——不斷不常、業不失壞、心法俱空、無念為法印</b>——此偈為全品修證心要總持：「佛法相雖空，亦復不斷滅」破斥「空即斷滅」與「生即恆常」兩邊；「諸行業不失」說明縱然法空名幻，善惡因果仍自分明；「諸法如芭蕉，一切從心生，若知法無實，是心亦復空」層層剝蕉至無實，連能觀之心亦歸於空，方為究竟；「有念墮魔網，無念則得出；心動故非道，不動是法印」以「不動」收攝全品，遙應本品開頭「師子遊戲三昧」——三昧者，即心不動而遊戲度生之境，此即中道實相之終極歸趣。</td></tr></tbody></table><p class="bh8p6-note">卷八第6品「放光品第六」：八難眾生即時解脫生欲界六天、動力悖論日照蓮池人動果樹喻、環境悖論三界修行條件矩陣、本體悖論幻人相殺喻與二諦降維、十六句法印偈頌。原文白話中觀三欄對照，含三問三答（經在最頂）。　中觀關鍵詞：福熟智利 因果相稱 中道樞紐 假名因緣 不動是法印</p></div></div>
+<script id="wy-bh8p6-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh8p6Btn"),BOX=document.getElementById("bh8p6Box"),MODAL=document.getElementById("bh8p6Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c8p6Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh8p6Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH8P6:END-->
 </body>
 </html>
