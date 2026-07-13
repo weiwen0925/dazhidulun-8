@@ -2255,5 +2255,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH8P6:END-->
+<!--WY-BH8P7:BEGIN-->
+<style id="wy-bh8p7-css">
+.bh8p7-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh8p7-fabbox.show{display:block;}
+.bh8p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh8p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh8p7-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh8p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh8p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh8p7-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh8p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh8p7-modal.open{display:flex;}
+.bh8p7-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh8p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh8p7-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh8p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh8p7-close:hover{background:#dde2e6;}
+.bh8p7-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh8p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh8p7-tbl th,.bh8p7-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh8p7-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh8p7-tbl thead th:nth-child(1){width:32%;}.bh8p7-tbl thead th:nth-child(2){width:41%;}.bh8p7-tbl thead th:nth-child(3){width:27%;}
+.bh8p7-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh8p7-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh8p7-guan{background:#eef2f5;color:#37505f;}
+.bh8p7-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh8p7-tbl tbody tr:nth-child(even) td.bh8p7-guan{background:#e8eef2;}
+.bh8p7-tbl tbody tr:nth-child(even) td.bh8p7-qa{background:#e7ecdb;}
+.bh8p7-tbl b{color:#8b2500;}
+.bh8p7-guan b{color:#2f6b5a;}
+.bh8p7-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh8p7-note b{color:#8b2500;}
+@media(max-width:900px){.bh8p7-fabbox{right:14px;}.bh8p7-tbl{font-size:11px;}.bh8p7-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh8p7-fabbox" id="bh8p7Box"><button class="bh8p7-btn" id="bh8p7Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh8p7-ic">譯</span><span class="bh8p7-ls"><span class="bh8p7-l1">本品 · 原文·白話·中觀</span><span class="bh8p7-l2">白話翻譯表</span></span></button></div><div class="bh8p7-modal" id="bh8p7Modal" role="dialog" aria-modal="true"><div class="bh8p7-card"><button class="bh8p7-close" id="bh8p7Close" type="button" aria-label="關閉">×</button><h3>卷八 · 第7品 白話翻譯表（自識宿命來詣佛所）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷8・第7品・自識宿命來詣佛所</p><table class="bh8p7-tbl"><caption>自識宿命來詣佛所 · 原文｜白話翻譯｜中觀概念（共13段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh8p7-src">【經】是諸天人自識宿命，皆大歡喜，來詣佛所，頭面禮佛足，却住一面。</td><td>這些天人與人類都能自己憶起自己過去世的因緣，內心都感到非常歡喜，於是前來拜見佛陀，以頭面觸地禮敬佛的雙足，然後退到一旁站立。</td><td class="bh8p7-guan"><b>經文標宗——自識宿命與來詣佛所之雙重不可思議</b>——此句同時宣稱兩件超越常識之事：一是凡夫剎那間憶起前世因果（自識宿命），二是瞬間跨越空間與生理限制而至佛前（來詣佛所）。全品三番問答，皆由此二重「不可思議」次第展開。</td></tr><tr><td class="bh8p7-qa">問曰：諸天生時，有三事自知：知所從來處，知所修福田處，知本所作福德。是人生時，無此三事，云何識宿命？</td><td>有人問：天人出生的時候，天生就能自然知道三件事：知道自己是從哪裡投生而來、知道自己曾在何處修過福田、知道自己曾造作過什麼樣的福德。可是人類出生的時候，並沒有這三種與生俱來的自知能力，那麼人類要如何能夠識得自己的宿世因緣呢？</td><td class="bh8p7-guan"><b>物種悖論——天人業報與人類隔陰之迷的落差</b>——提問者以物種對稱的封閉邏輯，將「識宿命」視為天人先天業報的專利，人類則被隔陰之迷天生阻隔，質疑經文所言人類亦能識宿命的可能性，此為全品第一番詰問。</td></tr><tr><td class="bh8p7-qa">答曰：人道不定，或有識者，有不識者。復次，假佛神力，則識宿命。</td><td>回答說：人道眾生的情況並非一律固定，有些人能夠自己憶起宿命，有些人則不能。再者，就算是原本不能自己憶起的人，只要藉助佛陀的威神之力，也同樣能夠識得自己的宿命。</td><td class="bh8p7-guan"><b>總答——破物種絕對化，引佛力為增上緣</b>——論主先破「人皆不知」的刻板認定（人道不定），再引入「假佛神力」作為外緣：凡夫識雖缺乏親因緣，但只要接通佛力此一極強增上緣，識宿命的果報便能成立，此即緣起法中親因緣不足可由增上緣補足之理。</td></tr><tr><td class="bh8p7-qa">問曰：諸天有報五神通，自識宿命能到佛所；人雖蒙佛神力得知宿命，所住處遠，云何能至佛所？</td><td>有人問：天人天生就具有五種神通，所以能夠自己識得宿命並且到達佛陀所在之處；人類雖然蒙受佛的神力而能夠知道自己的宿命，但所居住的地方十分遙遠，又要如何能夠到達佛陀所在之處呢？</td><td class="bh8p7-guan"><b>空間悖論——業報神通與他力介入的邊界</b>——此問承接前番已破的「識宿命」疑點，轉而質疑「跨越空間」這一重更難的不可思議：天人有先天報得神通可解釋，人類既無此神通，如何又能瞬間跨越遙遠距離而至佛前？</td></tr><tr><td class="bh8p7-qa">答曰：或有人生報得神通，如轉輪王、聖人等；或有人假佛神力。</td><td>回答說：有些人是生來就自然具有神通的果報，例如轉輪聖王、聖人等；另外也有些人是藉助佛陀的神通之力（才能夠到達）。</td><td class="bh8p7-guan"><b>雙軌並存——自力業通與他力佛通不相妨礙</b>——此答揭示兩條並行不悖的路徑：極少數殊勝之人（轉輪王、聖人）自身即有生報神通，其餘凡夫則仰賴佛力增上緣直接成辦，二者同歸「能至佛所」的果報，卻分屬自力、他力兩種因緣，正顯緣起法容許多重路徑並存而不相違。</td></tr><tr><td class="bh8p7-qa">問曰：人生十月，三年乳餔，十歲後能自出。今蒙佛威神，三惡、八難皆得解脫，生天、人中，即至佛所。天則可爾，人法未成，云何得來？</td><td>有人問：人類要在母胎中孕育十個月，出生後還要哺乳三年，一直到十歲以後才能夠自己獨立行走出門。如今蒙受佛的威神之力，三惡道與八難之處的眾生都得到解脫，往生到天上或人間，並且立刻就能到達佛陀所在之處。天人的情況這樣說還說得過去，但人類身體發育的條件根本還沒有成就，又要如何能夠立刻前來呢？</td><td class="bh8p7-guan"><b>生理悖論——身體發育條件與瞬間到場的矛盾</b>——此問是三番詰問中最貼近物理常識的一問：即便承認識宿命、承認佛力可跨越空間，新生的人類身體尚未發育成熟，連自行站立行走都做不到，又如何能立即「來詣佛所」？此問直指經文敘事與生理常識最激烈的衝突點。</td></tr><tr><td class="bh8p7-qa">答曰：五道生法各各不同：諸天、地獄皆化生；餓鬼二種生：若胎、若化生；人道、畜生四種生：卵生、濕生、化生、胎生。</td><td>回答說：五道眾生投生的方式各自不同：天人、地獄眾生都是化生（無所依託、忽然而生）；餓鬼道有兩種投生方式：或是胎生、或是化生；人道與畜生道則有四種投生方式：卵生、濕生、化生、胎生。</td><td class="bh8p7-guan"><b>總綱——四生五道之因緣差別</b>——論主先破除提問者「人類只能胎生」的單一想像，提出五道各有不同投生機制的總綱，其中「化生」一途尤為關鍵，因化生者出生即成熟、無須經歷胎兒發育期，正是下文解答「瞬間面佛」的生理學鑰匙。</td></tr><tr><td class="bh8p7-src">卵生者，如毘舍佉、彌伽羅母三十二子——毘舍佉母生三十二卵，卵剖生三十二男，皆為力士。彌伽羅為大兒之字，此母人得三道果。如是等名卵生。</td><td>所謂卵生，就好比毘舍佉的三十二個兒子（又稱彌伽羅母的三十二子）——毘舍佉這位母親生下三十二顆卵，卵殼剖開後生出三十二個男孩，個個都成為大力士。「彌伽羅」是她大兒子的名字，這位母親後來證得三種果位。像這樣的情形，就稱為卵生。</td><td class="bh8p7-guan"><b>實證舉隅——卵生非虛構，經有明證</b>——論主不以空言立論，逐一援引經典中確有其事的實例，以「毘舍佉三十二子」證成人道確有卵生之例，破除提問者「人類只能是胎生」的先入之見。</td></tr><tr><td class="bh8p7-src">濕生者，如揜羅婆利（揜，烏甘反）婬女，頂生轉輪聖王——如是等名濕生。</td><td>所謂濕生，就好比揜羅婆利這位女子（「揜」讀音同「庵」），以及頂生轉輪聖王——像這樣的情形，就稱為濕生。</td><td class="bh8p7-guan"><b>實證舉隅——濕生亦有王者之例</b>——揜羅婆利女與頂生轉輪聖王皆是人道濕生之實證，說明即使投生方式特殊，亦不妨礙成就尊貴果報，四生之間並無高下優劣的絕對區分。</td></tr><tr><td class="bh8p7-src">化生者，如佛與四眾遊行，比丘尼眾中有比丘尼名阿羅婆，地中化生；及劫初生時，人皆化生——如是等名為化生。</td><td>所謂化生，就好比佛陀與四眾弟子遊行教化時，比丘尼眾當中有一位名叫阿羅婆的比丘尼，是從地中化生而出的；以及在這個世界劫初剛形成的時候，當時的人類也都是化生而來的——像這樣的情形，就稱為化生。</td><td class="bh8p7-guan"><b>關鍵舉隅——化生即長，破生理發育之壁</b>——此例是解答「瞬間面佛」的核心關鍵：化生者出生時即已是成熟的形體，不必經歷胎兒、嬰兒、幼童的漫長發育過程，正好對應下文「化生人即時長大」的機制。</td></tr><tr><td class="bh8p7-src">胎生者，如常人生。</td><td>所謂胎生，就是像一般平常人出生的方式一樣。</td><td class="bh8p7-guan"><b>對照收束——四生並陳，胎生僅其一途</b>——胎生僅是四生之一，經此四例並陳，論主已充分證明「人類唯有胎生」只是提問者未及深察的世俗成見，人道實兼具卵、濕、化、胎四種投生機制。</td></tr><tr><td class="bh8p7-src">化生人即時長大，能到佛所。有人報得神通故，能到佛所。復次，佛借神通力故，能到佛所。</td><td>化生而出的人，出生後立刻就是成熟的形體，因此能夠立即到達佛陀所在之處。也有些人是自己天生就有神通的果報，因此能夠到達佛陀所在之處。再者，也有些人是憑藉佛陀所賦予的神通之力，因此才能夠到達佛陀所在之處。</td><td class="bh8p7-guan"><b>三大機制總收——生理、業報、他力並行不悖</b>——論主於此收束三辯，揭出「瞬間面佛」得以成立的三條並行機制：化生即長屬生理機制（跳過發育期）、報得神通屬業報機制（自帶特殊業力）、佛借神通力屬他力機制（佛陀神力直接成辦）。三者殊途同歸，共證經文所述並非違反常理，而是各種因緣具足下的必然果報。</td></tr><tr><td class="bh8p7-src">《中論》云：「以有空義故，一切法得成。」</td><td>《中論》說：「正因為有『空』這個道理的緣故，一切法才得以成立。」</td><td class="bh8p7-guan"><b>結語——無自性故有無量可能</b>——經文中所有看似違逆常識的神蹟與跨越，並非對邏輯的破壞，恰恰是「空性」與「緣起」最完美的證明。正因諸法無固定不變的自性（空），才使得因緣和合可以產生無量的可能性——這正是本品識宿命、跨空間、破生理三重悖論，最終共同指向的一句話。</td></tr></tbody></table><p class="bh8p7-note">卷八第7品「自識宿命來詣佛所」：識宿命與來詣佛所之雙重不可思議、物種悖論人道不定、空間悖論業通與佛力雙軌、生理悖論五道四生（卵濕化胎）、化生即長三大機制、以有空義故一切法得成。原文白話中觀三欄對照，含三問三答（經在最頂）。　中觀關鍵詞：假佛神力 報得神通 化生即長 增上緣 空有無礙</p></div></div>
+<script id="wy-bh8p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh8p7Btn"),BOX=document.getElementById("bh8p7Box"),MODAL=document.getElementById("bh8p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c8p7Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh8p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH8P7:END-->
 </body>
 </html>
