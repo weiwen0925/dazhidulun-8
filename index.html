@@ -2153,5 +2153,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH8P4:END-->
+<!--WY-BH8P5:BEGIN-->
+<style id="wy-bh8p5-css">
+.bh8p5-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh8p5-fabbox.show{display:block;}
+.bh8p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh8p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh8p5-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh8p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh8p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh8p5-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh8p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh8p5-modal.open{display:flex;}
+.bh8p5-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh8p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh8p5-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh8p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh8p5-close:hover{background:#dde2e6;}
+.bh8p5-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh8p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh8p5-tbl th,.bh8p5-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh8p5-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh8p5-tbl thead th:nth-child(1){width:32%;}.bh8p5-tbl thead th:nth-child(2){width:41%;}.bh8p5-tbl thead th:nth-child(3){width:27%;}
+.bh8p5-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh8p5-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh8p5-guan{background:#eef2f5;color:#37505f;}
+.bh8p5-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh8p5-tbl tbody tr:nth-child(even) td.bh8p5-guan{background:#e8eef2;}
+.bh8p5-tbl tbody tr:nth-child(even) td.bh8p5-qa{background:#e7ecdb;}
+.bh8p5-tbl b{color:#8b2500;}
+.bh8p5-guan b{color:#2f6b5a;}
+.bh8p5-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh8p5-note b{color:#8b2500;}
+@media(max-width:900px){.bh8p5-fabbox{right:14px;}.bh8p5-tbl{font-size:11px;}.bh8p5-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh8p5-fabbox" id="bh8p5Box"><button class="bh8p5-btn" id="bh8p5Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh8p5-ic">譯</span><span class="bh8p5-ls"><span class="bh8p5-l1">本品 · 原文·白話·中觀</span><span class="bh8p5-l2">白話翻譯表</span></span></button></div><div class="bh8p5-modal" id="bh8p5Modal" role="dialog" aria-modal="true"><div class="bh8p5-card"><button class="bh8p5-close" id="bh8p5Close" type="button" aria-label="關閉">×</button><h3>卷八 · 第5品 白話翻譯表（地皆柔軟令眾生和悅）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷八・第五品・地皆柔軟令眾生和悅</p><table class="bh8p5-tbl"><caption>地皆柔軟令眾生和悅 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh8p5-src">地皆柔軟，令眾生和悅。</td><td>大地全都變得柔軟，使眾生內心和樂歡悅。</td><td class="bh8p5-guan"><b>經文標宗——色法動而心法悅之總綱</b>——此八字經文以極簡的因果句式，拋出全品核心悖論：物理層面「地皆柔軟」的色法變動，竟直接導致精神層面「令眾生和悅」的心法反應，是下文論主必須解開的因果斷層，也是全品「心隨身轉」義理的總出發點。</td></tr><tr><td class="bh8p5-qa">問曰：地動，云何能令眾生心得和悅？</td><td>有人問：土地的震動，怎麼能夠使眾生內心獲得和樂歡悅呢？</td><td class="bh8p5-guan"><b>設難——色心因果斷層之惑</b>——此問直指經文表面上難以成立的因果關係：地（色法）與心（心法）本屬不同範疇，一者之柔軟何以能令另一者和悅？此問若不先立起來，後續一切論述便無從著力。</td></tr><tr><td class="bh8p5-qa">答曰：心隨身故，身得樂事，心則欣悅。悅者，共住之人及便身之具，能令心悅。今以是三千大千世界雜惡眾生其心麁獷，無有善事；是故世尊動此大地，令皆柔軟，心得利益。</td><td>回答說：這是因為心是隨著身體而轉變的緣故，身體遇到令人愉悅的事，心就會隨之欣悅歡喜。所謂令人歡悅的事，是指共同居住的人以及日常受用的器具環境，這些都能使人心生歡悅。如今這三千大千世界中種種惡劣的眾生，他們的心性粗獷剛強，沒有絲毫良善之事；因此世尊才震動這片大地，使它全都變得柔軟，讓眾生的心因此獲得利益。</td><td class="bh8p5-guan"><b>心隨身轉定律——唯識傳導鏈的建立</b>——此答提出全品的核心定律「心隨身故」：心並非懸空自主的獨立主體，而是沿著身受被外境持續覆寫的傳導系統；眾生心已因久處麁獷環境而僵化為防禦盔甲，常規言教被彈開失效，故佛不得不以物理環境的直接改造作為對治入手處。</td></tr><tr><td class="bh8p5-src">譬如三十三天王歡樂園中，諸天入者，心皆柔軟，歡樂和悅，麁心不生；若阿修羅起兵來時，都無鬪心。是時，釋提婆那民將諸天眾入麁澁園中，以此園中樹木華實氣不和悅，麁澁惡故，諸天人眾鬪心即生。佛亦如是，以此大地麁澁弊惡故，變令柔軟，使一切眾生心得喜悅。</td><td>就好比三十三天天王的歡樂園中，凡是進入其中的天人，心都會變得柔軟，歡樂和悅，粗獷剛強之心不會生起；即使此時阿修羅興兵前來，天人們也完全沒有鬥爭之心。但當釋提桓因（帝釋天）率領諸天眾進入粗澀園的時候，由於這座園林中的樹木花果氣息不調和、粗澀惡劣的緣故，諸天人眾便立刻生起了鬥爭之心。佛陀的作法也是如此，因為這片大地粗澀弊惡的緣故，便將它轉變為柔軟，使一切眾生的心都能獲得喜悅。</td><td class="bh8p5-guan"><b>宏觀譬喻——同一主體因環境而異心</b>——三十三天同一批天人，在歡樂園中心柔軟無鬥心，入麁澁園卻立即鬥心即生，證明「心隨身轉」並非空言，而是連天人亦不能自外的普遍法則；此喻亦點出天人在未經環境轉化前，同樣毫無憑藉自身意志力抵擋外境的能力，何況凡夫。</td></tr><tr><td class="bh8p5-src">又如呪術藥草熏人鼻時，恚心便生，即時鬪諍；復有呪術藥草能令人心和悅歡喜，敬心相向。呪術草藥尚能如此，何況三千大千世界地皆柔軟？</td><td>又好比某些咒術藥草熏染人的鼻子時，會使人生起瞋恚之心，立刻引發爭鬥；也有另一些咒術藥草，能使人心和悅歡喜，以恭敬之心相互對待。連小小的咒術藥草尚且能有如此（改變人心）的效力，更何況是三千大千世界的大地全都變得柔軟呢？</td><td class="bh8p5-guan"><b>微觀譬喻與以小見大——色心不二之極致證明</b>——微觀嗅覺的化學反應尚能直接引發情緒突變，可見精神狀態確實具備物理可塑性；「何況」二字完成了從世間小境到世尊大力的邏輯質變——若區區藥草尚能如此，佛以神力柔軟大千世界，其轉化眾生心性的效力自然無可限量。此正是「色心不二」的具體證成：物質與精神並非截然二分，而是互為緣起的網絡，操縱物理大地本質上就是在直接操縱眾生的精神本體。</td></tr></tbody></table><p class="bh8p5-note">卷八第5品「地皆柔軟令眾生和悅」：色法動而心法悅之因果悖論、心隨身轉之唯識定律、三十三天歡樂園麁澁園對比、呪術藥草嗅覺實證。原文白話中觀三欄對照，含一問一答（經在最頂）。　中觀關鍵詞：心隨身轉 色心不二 心無自性 以柔克剛</p></div></div>
+<script id="wy-bh8p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh8p5Btn"),BOX=document.getElementById("bh8p5Box"),MODAL=document.getElementById("bh8p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c8p5Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh8p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH8P5:END-->
 </body>
 </html>
