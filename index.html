@@ -2051,5 +2051,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH8P2:END-->
+<!--WY-BH8P3:BEGIN-->
+<style id="wy-bh8p3-css">
+.bh8p3-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh8p3-fabbox.show{display:block;}
+.bh8p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh8p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh8p3-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh8p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh8p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh8p3-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh8p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh8p3-modal.open{display:flex;}
+.bh8p3-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh8p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh8p3-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh8p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh8p3-close:hover{background:#dde2e6;}
+.bh8p3-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh8p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh8p3-tbl th,.bh8p3-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh8p3-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh8p3-tbl thead th:nth-child(1){width:32%;}.bh8p3-tbl thead th:nth-child(2){width:41%;}.bh8p3-tbl thead th:nth-child(3){width:27%;}
+.bh8p3-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh8p3-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh8p3-guan{background:#eef2f5;color:#37505f;}
+.bh8p3-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh8p3-tbl tbody tr:nth-child(even) td.bh8p3-guan{background:#e8eef2;}
+.bh8p3-tbl tbody tr:nth-child(even) td.bh8p3-qa{background:#e7ecdb;}
+.bh8p3-tbl b{color:#8b2500;}
+.bh8p3-guan b{color:#2f6b5a;}
+.bh8p3-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh8p3-note b{color:#8b2500;}
+@media(max-width:900px){.bh8p3-fabbox{right:14px;}.bh8p3-tbl{font-size:11px;}.bh8p3-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh8p3-fabbox" id="bh8p3Box"><button class="bh8p3-btn" id="bh8p3Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh8p3-ic">譯</span><span class="bh8p3-ls"><span class="bh8p3-l1">本品 · 原文·白話·中觀</span><span class="bh8p3-l2">白話翻譯表</span></span></button></div><div class="bh8p3-modal" id="bh8p3Modal" role="dialog" aria-modal="true"><div class="bh8p3-card"><button class="bh8p3-close" id="bh8p3Close" type="button" aria-label="關閉">×</button><h3>卷八 · 第3品 白話翻譯表（師子遊戲三昧）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷八・第三品・師子遊戲三昧</p><table class="bh8p3-tbl"><caption>師子遊戲三昧 · 原文｜白話翻譯｜中觀概念（共9段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh8p3-src">爾時，世尊故在師子座，入師子遊戲三昧，以神通力感動三千大千世界，六種震動。</td><td>那時，世尊仍然安坐在獅子座上，進入獅子遊戲三昧，以神通力感動三千大千世界，使大地產生六種震動。</td><td class="bh8p3-guan"><b>經文標宗——三昧為因，動地為果</b>——此句點出全品的因果結構：「入三昧」是因，「六種震動」是果；「師子座」與「師子遊戲」前後呼應，暗示佛之自在正如師子之王，全品即依此展開「三昧何以得名」「佛何以入此三昧」「震動何以獨屬佛力」「震動所為何事」四番問答。</td></tr><tr><td class="bh8p3-qa">問曰：此三昧何以名「師子遊戲」？</td><td>有人問：這個三昧為什麼名為「獅子遊戲」呢？</td><td class="bh8p3-guan"><b>追問——命名之所依</b>——此問要求釐清「師子遊戲」一詞的取義所在，是全品開展譬喻論證的入手處。</td></tr><tr><td class="bh8p3-qa">答曰：譬如師子搏鹿，自在戲樂；佛亦如是，入此三昧，能種種迴轉此地，令六反震動。復次，師子遊戲，譬如師子戲日，諸獸安隱；佛亦如是，入是三昧時，震動三千大千世界，能令三惡眾生一時得息，皆得安隱。復次，佛名人師子，師子遊戲三昧，是佛戲三昧也。入此三昧時，令此大地六種震動，一切地獄惡道眾生，皆蒙解脫得生天上，是名為戲。</td><td>回答說：就好比獅子搏擊鹿群時，是自在遊戲、毫不費力的；佛也是這樣，進入此三昧，便能種種迴轉大地，使它產生六種震動。再者，「獅子遊戲」，就好比獅子平日嬉戲之時，其他野獸反而因此安穩無懼；佛也是這樣，進入此三昧時，雖然震動三千大千世界，卻能使地獄、餓鬼、畜生三惡道的眾生同時得到止息，都獲得安穩。再者，佛被稱為「人中獅子」，「獅子遊戲三昧」就是佛的遊戲三昧。進入這個三昧時，能使大地產生六種震動，一切地獄惡道的眾生，都因此蒙受解脫而得以往生天上，這就叫做「遊戲」。</td><td class="bh8p3-guan"><b>三重譬喻——自在義、安穩義、解脫義層層遞進</b>——「師子搏鹿」喻佛之神力運轉大地毫不費力、自在無礙；「師子戲日」喻震動雖及三千大千世界，三惡道眾生反因此得安穩，顯神力之震動非為擾亂而是拔苦；「人師子戲三昧」則直接點明震動之究竟效果——地獄眾生蒙此解脫得生天上。三喻由自在而安穩而解脫，正顯佛之大力（緣起用）與眾生蒙益（果）之間並無實在的施與受之相可得（性空），故雖大用齊施而謂之「戲」。</td></tr><tr><td class="bh8p3-qa">問曰：佛何以故入此三昧？</td><td>有人問：佛陀為什麼要進入這個三昧呢？</td><td class="bh8p3-guan"><b>追問——動機為何</b>——承接上文對三昧本身的解說，此問進一步逼問佛入此三昧的目的所在。</td></tr><tr><td class="bh8p3-qa">答曰：欲動三千大千世界，出三惡道眾生，著二道中故。復次，上三種變化，出自佛身，人或信心不深；今動大地，欲令眾生知佛神力無量，能令外物皆動，信淨心喜，皆得離苦。</td><td>回答說：（佛入此三昧）是想要震動三千大千世界，使三惡道的眾生得以出離，安置到人、天二善道之中。再者，前面所說的三種神變（微笑、放毛孔光、放常光），都是從佛身自身顯現，有的人可能因此信心仍不夠深切；現在（改為）震動大地，是想讓眾生知道佛的神力無量無邊，連身外之物（大地）都能使之震動，因而生起清淨的信心與歡喜，都能藉此脫離痛苦。</td><td class="bh8p3-guan"><b>由內證外——外物皆動以深化信心</b>——前三種神變（微笑、毛孔光、常光）皆從佛身直接顯發，屬「內證」層面的示現；震動大地則是佛力及於「外物」（身外的大地山河），較之前更能破除眾生「佛力僅及自身」的狹隘認知，令信心由淺入深；此正顯佛之神力雖用於外境，而外境與佛身本無自性可分割對立，皆是緣起中互攝互入之顯現。</td></tr><tr><td class="bh8p3-qa">問曰：有諸阿羅漢及諸天亦能動地，何以獨言是佛神力？</td><td>有人問：阿羅漢和諸天神也都能夠震動大地，為什麼獨獨說這是佛的神力呢？</td><td class="bh8p3-guan"><b>反詰——神力是否佛所獨有</b>——此問以阿羅漢、諸天皆能動地為由，質疑「動地」是否真能彰顯佛力之獨特殊勝，是全品邏輯最尖銳的一次辯難。</td></tr><tr><td class="bh8p3-qa">答曰：諸阿羅漢及諸天不能具足動，唯佛世尊能令大地六種震動。</td><td>回答說：阿羅漢和諸天神雖然也能使大地震動，但都無法完整具足六種震動的方式，只有佛世尊才能使大地產生完整的六種震動。</td><td class="bh8p3-guan"><b>量與質的分判——「具足」為佛獨有之義</b>——此答不否認阿羅漢、諸天亦有動地之能（緣起共法），卻以「具足」與否作為分判：唯佛能圓滿具足六種震動之相，說明佛力與二乘、天人之力雖同屬「能動」，其圓滿度與究竟性卻有本質差異，此即大乘與二乘所共而不共之處。</td></tr><tr><td class="bh8p3-qa">問曰：佛何以故震動三千大千世界？</td><td>有人問：佛陀為什麼要震動三千大千世界呢？</td><td class="bh8p3-guan"><b>再問——動地究竟為何而設</b>——此問回到最初的宗旨，要求論主總結震動大地的根本目的所在，是全品收束性的一問。</td></tr><tr><td class="bh8p3-qa">答曰：欲令眾生知一切皆空、無常故。有諸人言：「大地及日月、須彌、大海，是皆有常。」是以世尊六種動地，示此因緣，令知無常。復次，如人欲染衣，先去塵土；佛亦如是，先令三千世界眾生見佛神力，敬心柔軟，然後說法，是故六種動地。</td><td>回答說：（佛陀震動大地）是想讓眾生知道一切法都是空、都是無常的緣故。有人認為：「大地以及日月、須彌山、大海，這些都是恆常不變的。」因此世尊以六種方式震動大地，藉此因緣顯示（連大地都會震動變異），讓眾生明白一切都是無常的。再者，就好比有人想要染色衣物，必須先去除衣服上的塵土；佛陀也是這樣，先讓三千大千世界的眾生見識到佛的神力，使他們生起恭敬柔軟之心，然後再為他們說法，這就是震動大地六種方式的緣故。</td><td class="bh8p3-guan"><b>總結全品——破常執以顯無常，柔心以為說法先導</b>——此段是全品義理的終極收束：一者「破常執」——眾生執大地、日月、須彌、大海為恆常不變之常見，佛以動地之相直接以現量破斥此執，顯一切有為法皆是因緣和合、剎那變異，無常即是緣起法必然之相；二者「染衣喻」——說法如染色，眾生心如衣物，若心地堅硬（我慢覆蓋），法水難以受染，故先以神力動地令生柔軟恭敬之心，做為聞法得度的前方便。二義一破執、一啟信，同歸於性空與緣起不二之中道。</td></tr></tbody></table><p class="bh8p3-note">卷八第3品「師子遊戲三昧」：師子遊戲三昧得名之三重譬喻、佛入三昧動地之緣由、動地唯佛具足、破常執顯無常與染衣喻。原文白話中觀三欄對照，含四問四答（經在最頂）。　中觀關鍵詞：三重譬喻 具足義 破常執顯無常 染衣喻柔軟心</p></div></div>
+<script id="wy-bh8p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh8p3Btn"),BOX=document.getElementById("bh8p3Box"),MODAL=document.getElementById("bh8p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c8p3Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh8p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH8P3:END-->
 </body>
 </html>
