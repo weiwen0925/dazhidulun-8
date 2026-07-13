@@ -1949,5 +1949,56 @@ else window.addEventListener('load',function(){setTimeout(bhGo,200);});
 })();
 </script>
 <!--WY-GOTO:END-->
+<!--WY-BH8P1:BEGIN-->
+<style id="wy-bh8p1-css">
+.bh8p1-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh8p1-fabbox.show{display:block;}
+.bh8p1-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh8p1-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh8p1-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh8p1-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh8p1-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh8p1-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh8p1-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh8p1-modal.open{display:flex;}
+.bh8p1-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh8p1-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh8p1-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh8p1-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh8p1-close:hover{background:#dde2e6;}
+.bh8p1-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh8p1-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh8p1-tbl th,.bh8p1-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh8p1-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh8p1-tbl thead th:nth-child(1){width:32%;}.bh8p1-tbl thead th:nth-child(2){width:41%;}.bh8p1-tbl thead th:nth-child(3){width:27%;}
+.bh8p1-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh8p1-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh8p1-guan{background:#eef2f5;color:#37505f;}
+.bh8p1-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh8p1-tbl tbody tr:nth-child(even) td.bh8p1-guan{background:#e8eef2;}
+.bh8p1-tbl tbody tr:nth-child(even) td.bh8p1-qa{background:#e7ecdb;}
+.bh8p1-tbl b{color:#8b2500;}
+.bh8p1-guan b{color:#2f6b5a;}
+.bh8p1-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh8p1-note b{color:#8b2500;}
+@media(max-width:900px){.bh8p1-fabbox{right:14px;}.bh8p1-tbl{font-size:11px;}.bh8p1-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh8p1-fabbox" id="bh8p1Box"><button class="bh8p1-btn" id="bh8p1Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh8p1-ic">譯</span><span class="bh8p1-ls"><span class="bh8p1-l1">本品 · 原文·白話·中觀</span><span class="bh8p1-l2">白話翻譯表</span></span></button></div><div class="bh8p1-modal" id="bh8p1Modal" role="dialog" aria-modal="true"><div class="bh8p1-card"><button class="bh8p1-close" id="bh8p1Close" type="button" aria-label="關閉">×</button><h3>卷八 · 第1品 白話翻譯表（放光釋論第十四之餘）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷八・第一品・放光釋論第十四之餘</p><table class="bh8p1-tbl"><caption>放光釋論第十四之餘 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh8p1-src">爾時，世尊以常光明遍照三千大千世界，亦至東方如恒河沙等諸佛世界，乃至十方亦復如是。若有眾生遇斯光者，必得阿耨多羅三藐三菩提。</td><td>那時，世尊以恆常具有的身光遍照三千大千世界，也照到東方如恆河沙那樣多的諸佛世界，乃至十方世界也都是如此。如果有眾生遇到這道光明，必定能證得無上正等正覺。</td><td class="bh8p1-guan"><b>經文標宗——常光為總綱</b>——此句以「常光遍照」與「遇光必得菩提」兩個斷言收束序分放光一節，「常」字點出下文論主必須釐清的核心：佛光非隨機示現而是恆常本具之相，此即下文四番問答所依之「所釋」。</td></tr><tr><td class="bh8p1-qa">問曰：上已舉身微笑及放毛孔光明，今何以復放常光而照十方？</td><td>有人問：前面已經敘述佛陀舉身微笑並放出毛孔光明，現在為什麼又要放出常光遍照十方呢？</td><td class="bh8p1-guan"><b>設難——現象轉換之惑</b>——此問代表讀者對「異光」轉「常光」的疑惑：佛已示現多種神通光相，何以又別放常光？此問實為導引論主釐清「常光」與「神通光」二者體性與作用之別。</td></tr><tr><td class="bh8p1-qa">答曰：有人見異光明，謂非佛光。見佛常光轉大，心則歡喜，此實佛光，便畢至阿耨多羅三藐三菩提。</td><td>回答說：有人見到（佛陀所放的）各種特殊光明，會認為那不是真正的佛光。（但）見到佛陀恆常具有的光明轉為廣大，心中便會生起歡喜，（因為知道）這確實是佛光，於是便能畢竟到達無上正等正覺。</td><td class="bh8p1-guan"><b>常光起信——由信而入菩提</b>——答文揭示「常光」的特殊作用在於「起信」：神通光可疑為幻現，常光則是佛身本具之相，眾生見此不可偽造之常相而生決定信心，信心即是趣向菩提的增上緣，故言「必至阿耨多羅三藐三菩提」。</td></tr><tr><td class="bh8p1-qa">問曰：云何為「常光」？</td><td>有人問：什麼叫做「常光」？</td><td class="bh8p1-guan"><b>追問——常光體相為何</b>——此問由「作用」轉向「定義」，要求論主具體界定「常光」的體相位階，是全品由現象進入教理定義的關鍵一問。</td></tr><tr><td class="bh8p1-qa">答曰：佛身四邊各一丈光明，菩薩生便有此，是三十二相之一，名為丈光相。</td><td>回答說：佛身四周各有一丈的光明，菩薩一出生便具足這種光明，這是三十二相之一，名叫「丈光相」。</td><td class="bh8p1-guan"><b>常光即丈光相——恆常本具義</b>——答文明確將「常光」定義為三十二相中的「丈光相」：其特徵是「菩薩生便有此」，即與生俱來、不待修證、不待入定而自然具足，正顯「常」字之義——非因緣一時和合而暫現之相，而是佛身果報恆常具足之相。</td></tr><tr><td class="bh8p1-qa">問曰：佛何以故光常一丈而不多？</td><td>有人問：佛陀為什麼常光只有一丈，而不是更多呢？</td><td class="bh8p1-guan"><b>追問——量之限制</b>——此問承接「丈光相」的定義，逼問「一丈」這個具體數量是佛之「不能」（能力有限）還是佛之「不為」（有其他考量），是全品最核心的思辨關卡。</td></tr><tr><td class="bh8p1-qa">答曰：一切諸佛常光無量，常照十方世界。釋迦牟尼佛神通身光無量，或一丈、百丈、千萬億，乃至滿三千大千世界；乃至十方，如諸佛常法。但於五濁世為眾生少德、少智故，受一丈光明；若受多光，今眾生薄福鈍根，目不堪其明。如人見天身眼則失明，以光盛眼微故。若眾生利根福重，佛則為之現無量光明。復次，有人見佛常光歡喜得度。譬如國王以常食之餘賜諸群下，得者大喜；佛亦如是，有人見佛種種餘光心不歡喜，見佛常光，必至阿耨多羅三藐三菩提。</td><td>回答說：一切諸佛的常光其實是無量的，能夠恆常照耀十方世界。釋迦牟尼佛以神通力所現的身光也是無量的，有時是一丈，有時是百丈、千萬億丈，乃至可以充滿三千大千世界；甚至遍照十方世界，這是諸佛共通的常法。只是因為（釋迦牟尼佛出世於）五濁惡世，眾生福德淺薄、智慧微少的緣故，所以只顯現一丈的光明；如果顯現過多的光明，如今福薄根鈍的眾生，眼睛將無法承受那樣的光明強度。就好比有人見到天人之身，眼睛反而會因此失明，這是因為光明過於熾盛而眼力微弱所致。如果眾生根器銳利、福德深厚，佛就會為他們示現無量的光明。再者，也有人見到佛的常光而心生歡喜，因而得度。就好比國王把自己日常飲食的剩餘賞賜給臣下，得到的人會非常歡喜；佛也是如此，有人見到佛的種種其他光明，心中並不特別歡喜，但見到佛的常光，就必定能到達無上正等正覺。</td><td class="bh8p1-guan"><b>總答——量之限制乃隨緣攝眾，非佛之不能</b>——此段是全品義理的總收束：先明「諸佛常光實無量」，破除「常光僅一丈」即是佛之能力局限的誤解；再以「五濁眾生福薄根鈍、目不堪其明」說明「一丈」之量純是隨順眾生根機所作的善巧攝受，正是中觀「隨緣示現、不壞假名」之理——光明本身無定量（性空），而顯現多少全依所化眾生根機因緣而定（緣起）；末段「國王常食」之喻更點出常光之所以動人，正在於它是「恆常本具、非為誇飾」的真實相，故能直接攝受眾生趣入菩提。</td></tr></tbody></table><p class="bh8p1-note">卷八第1品「放光釋論第十四之餘」：常光遍照十方、丈光相之定義、諸佛常光無量而隨眾生根機受一丈之量。原文白話中觀三欄對照，含三問三答（經在最頂）。　中觀關鍵詞：常光起信 丈光相恆常本具 隨緣示現不壞假名 眾生根機決定顯現之量</p></div></div>
+<script id="wy-bh8p1-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh8p1Btn"),BOX=document.getElementById("bh8p1Box"),MODAL=document.getElementById("bh8p1Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=0;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c8p1Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh8p1Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH8P1:END-->
 </body>
 </html>
