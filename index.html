@@ -2102,5 +2102,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH8P3:END-->
+<!--WY-BH8P4:BEGIN-->
+<style id="wy-bh8p4-css">
+.bh8p4-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh8p4-fabbox.show{display:block;}
+.bh8p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh8p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh8p4-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh8p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh8p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh8p4-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh8p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh8p4-modal.open{display:flex;}
+.bh8p4-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh8p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh8p4-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh8p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh8p4-close:hover{background:#dde2e6;}
+.bh8p4-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh8p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh8p4-tbl th,.bh8p4-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh8p4-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh8p4-tbl thead th:nth-child(1){width:32%;}.bh8p4-tbl thead th:nth-child(2){width:41%;}.bh8p4-tbl thead th:nth-child(3){width:27%;}
+.bh8p4-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh8p4-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh8p4-guan{background:#eef2f5;color:#37505f;}
+.bh8p4-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh8p4-tbl tbody tr:nth-child(even) td.bh8p4-guan{background:#e8eef2;}
+.bh8p4-tbl tbody tr:nth-child(even) td.bh8p4-qa{background:#e7ecdb;}
+.bh8p4-tbl b{color:#8b2500;}
+.bh8p4-guan b{color:#2f6b5a;}
+.bh8p4-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh8p4-note b{color:#8b2500;}
+@media(max-width:900px){.bh8p4-fabbox{right:14px;}.bh8p4-tbl{font-size:11px;}.bh8p4-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh8p4-fabbox" id="bh8p4Box"><button class="bh8p4-btn" id="bh8p4Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh8p4-ic">譯</span><span class="bh8p4-ls"><span class="bh8p4-l1">本品 · 原文·白話·中觀</span><span class="bh8p4-l2">白話翻譯表</span></span></button></div><div class="bh8p4-modal" id="bh8p4Modal" role="dialog" aria-modal="true"><div class="bh8p4-card"><button class="bh8p4-close" id="bh8p4Close" type="button" aria-label="關閉">×</button><h3>卷八 · 第4品 白話翻譯表（六種震動）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷八・第四品・六種震動</p><table class="bh8p4-tbl"><caption>六種震動 · 原文｜白話翻譯｜中觀概念（共15段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh8p4-src">東涌西沒，西涌東沒；南涌北沒，北涌南沒；邊涌中沒，中涌邊沒。</td><td>東邊湧起、西邊沉沒，西邊湧起、東邊沉沒；南邊湧起、北邊沉沒，北邊湧起、南邊沉沒；邊緣湧起、中央沉沒，中央湧起、邊緣沉沒。</td><td class="bh8p4-guan"><b>經文標宗——方位矩陣為總綱</b>——此六句十八字窮盡大地震動的一切方位組合（東西、南北、邊中三對方向兩兩互成湧沒），是全品「六種震動」得名之所本，也是下文論主逐層釋經、由物理現象步步昇華至勝義諦的起點。</td></tr><tr><td class="bh8p4-qa">問曰：何以故正有六種動？</td><td>有人問：為什麼恰好是六種震動呢？</td><td class="bh8p4-guan"><b>設問——現象何以恰為六種</b>——此問要求論主釐清「六種動」並非隨意描述，而應有其嚴格的內在分類依據，是下文建立「上中下三品」等級矩陣的引子。</td></tr><tr><td class="bh8p4-qa">答曰：地動有上、中、下。下者，二種動：或東涌西沒，或南湧北沒，或邊中。中者，有四：或東、西、南、北，或東、西、邊、中，或南、北、邊、中。上者，六種動。</td><td>回答說：大地震動分為上、中、下三品。下品只有兩種動：或是東邊湧起西邊沉沒，或是南邊湧起北邊沉沒，或是邊緣與中央互動。中品有四種動：或是東西南北四方皆動，或是東西與邊中皆動，或是南北與邊中皆動。上品則具足全部六種動。</td><td class="bh8p4-guan"><b>三品分判——震動完整性的等級</b>——此答建立一座「震動金字塔」：下品僅得兩個方向、中品得四個、唯上品方能具足六個方向。震動完整性越高，所需因緣力量越強，此即下文「佛動地必屬最高因緣（上者六種動）」的本體論依據，非修辭鋪陳，而是嚴密的量級階差。</td></tr><tr><td class="bh8p4-src">有種種因緣令地大動，如佛告阿難：「八因八緣，令地震動。」如別說。</td><td>有種種因緣能使大地劇烈震動，就如同佛陀曾告訴阿難說：「有八種原因、八種因緣，能使大地震動。」詳細內容在別處經典已經說明，此處不再重複。</td><td class="bh8p4-guan"><b>特殊通道——八因八緣為佛動地保留位置</b>——論主藉「佛告阿難」的典故，先為「上者六種動」保留一條特殊通道：佛動地必然落於「八因八緣」這一類最高因緣之中；「如別說」三字是論主處理文本的高明手法，鋪墊至此便轉換鏡頭，先完整羅列世間一般所認知的地動因緣，作為下一階對比的基準線。</td></tr><tr><td class="bh8p4-src">復次，有人言：「四種地動：火動，龍動，金翅鳥動，天王動。」二十八宿，月月一周繞。</td><td>再者，有人說：「地動有四種：火神引發的動、龍神引發的動、金翅鳥引發的動、天王引發的動。」（這是依循）二十八星宿，每個月運行一周而說的。</td><td class="bh8p4-guan"><b>羅列世俗——建立因果基準線</b>——論主並不否定世俗法則，反而客觀承認世間地震自有其星象與鬼神的因緣；此一鋪陳不是迷信的複製，而是以世俗諦作為墊腳石，先給眾生一條熟悉的因果基準線，再反襯佛陀引發地震的超然與出世間目的。</td></tr><tr><td class="bh8p4-src">若月至昴宿、張宿、氐宿、婁宿、室宿、胃宿，是六種宿中，爾時地動若崩，是動屬火神；是時無雨，江河枯竭，年不宜麥，天子凶，大臣受殃。</td><td>如果月亮運行到昴宿、張宿、氐宿、婁宿、室宿、胃宿這六個星宿的時候，那時如果發生地動甚至崩裂，這種震動屬於火神所引發；這時將會沒有雨水，江河枯竭，這一年不適宜種植麥子，君王會有凶兆，大臣將遭受禍殃。</td><td class="bh8p4-guan"><b>世俗災禍之一——火神動</b>——此段以具體星宿與具體災禍徵兆對應，展現世俗宇宙觀「天象—人事」感應的典型描繪，正是論主藉以鋪陳世俗諦因果基準線的實際內容，為下文對比佛動地的超然性預作準備。</td></tr><tr><td class="bh8p4-src">若柳宿、尾宿、箕宿、壁宿、奎宿、危宿，是六種宿中，爾時地動若崩，是動屬龍神；是時無雨，江河枯竭，年不宜麥，天子凶，大臣受殃。</td><td>如果月亮運行到柳宿、尾宿、箕宿、壁宿、奎宿、危宿這六個星宿的時候，那時如果發生地動甚至崩裂，這種震動屬於龍神所引發；這時同樣將會沒有雨水，江河枯竭，這一年不適宜種植麥子，君王會有凶兆，大臣將遭受禍殃。</td><td class="bh8p4-guan"><b>世俗災禍之二——龍神動</b>——與火神動徵兆完全一致，顯示三神（火、龍、金翅鳥）共主十八宿而同歸一類災禍性徵兆，正是世俗諦「三災」的具體羅列，尚未進入緣起、性空等勝義層面，僅作為墊腳石之鋪陳。</td></tr><tr><td class="bh8p4-src">若參宿、鬼宿、星宿、軫宿、亢宿、翼宿，是六種宿中，爾時若地動若崩，是動屬金翅鳥；是時無雨，江河枯竭，年不宜麥，天子凶，大臣受殃。</td><td>如果月亮運行到參宿、鬼宿、星宿、軫宿、亢宿、翼宿這六個星宿的時候，那時如果發生地動甚至崩裂，這種震動屬於金翅鳥所引發；這時同樣將會沒有雨水，江河枯竭，這一年不適宜種植麥子，君王會有凶兆，大臣將遭受禍殃。</td><td class="bh8p4-guan"><b>世俗災禍之三——金翅鳥動，三災圓滿</b>——至此三神共主十八宿的災禍性徵兆羅列完畢，論主刻意以重複句式強調其一致性，為下文「天帝動」的唯一吉兆形成鮮明對比，凸顯「三災一吉」的世俗宇宙觀結構。</td></tr><tr><td class="bh8p4-src">若心宿、角宿、房宿、女宿、虛宿、井宿、畢宿、觜宿、斗宿，是九種宿中，爾時地動若崩，是動屬天帝；是時安隱豐雨，宜五穀，天子吉，大臣受福，萬民安隱。</td><td>如果月亮運行到心宿、角宿、房宿、女宿、虛宿、井宿、畢宿、觜宿、斗宿這九個星宿的時候，那時如果發生地動甚至崩裂，這種震動屬於天帝所引發；這時將會風調雨順、五穀豐收，君王會有吉兆，大臣將獲得福報，天下百姓都能安穩無虞。</td><td class="bh8p4-guan"><b>世俗吉兆——天帝動獨為祥瑞</b>——四神之中唯獨天帝動能為世俗世界帶來豐收與安寧，「三災一吉」的結構至此完整羅列。論主藉此建立普世認知的因果基準線，即《中論》所謂「依俗諦說」——不排斥世俗法則，而是把它當作墊腳石，最終引導眾生跨越世俗、徹悟無常的勝義諦。</td></tr><tr><td class="bh8p4-src">復次，地動因緣有小有大，有動一閻浮提，有動四天下、一千、二千、三千大千世界。</td><td>再者，導致地動的因緣有小有大的差別，有的只使一個閻浮提震動，有的則使四天下、一千世界、二千世界，乃至三千大千世界都一起震動。</td><td class="bh8p4-guan"><b>對比規模——因果相稱的緣起論</b>——此句立綱：因緣規模等於果報規模，這不是修辭，而是緣起法的基本原則——既無「多因少果」，也無「少因多果」，一切現象皆依因緣和合而生，震動的大小精確映照著背後因緣的大小。</td></tr><tr><td class="bh8p4-src">小動以小因緣故：若福德人若生若死，一國地動，是為小動。</td><td>小規模的震動是由於小因緣的緣故：如果是一位有福德的人出生或去世，會使一個國家的土地震動，這就叫做小動。</td><td class="bh8p4-guan"><b>小因緣的典型——有限因緣感有限果</b>——一位福德之人的出生或去世，所牽動的共業範圍僅限於一國或一閻浮提，此與世俗星宿神明所引發的地動同屬一個層級——都是有限因緣感得的有限果報，非佛法所特有的宇宙級大動。</td></tr><tr><td class="bh8p4-src">大動大因緣故：如佛初生時、初成佛時、將滅度時，三千大千世界皆為震動，是為大動。</td><td>大規模的震動是由於大因緣的緣故：例如佛陀出生的時候、初次成佛的時候、即將入滅的時候，三千大千世界都會一起震動，這就叫做大動。</td><td class="bh8p4-guan"><b>大因緣的典型——法界層級的宇宙大動</b>——佛陀一生中初生、初成佛、將滅度三個節點皆為法界層級的事件，自然對應最高等級的六種動；本品經文說法之時再現大動，正因佛欲大集眾生、為諸菩薩授記，其因緣又是一次宇宙級的大事，與前述「小動」形成鮮明的量級對比。</td></tr><tr><td class="bh8p4-src">今佛欲大集眾生故，令此地六種震動。</td><td>如今佛陀是想要廣大地集合眾生的緣故，才使這片大地產生六種震動。</td><td class="bh8p4-guan"><b>目的一·大集眾生——空間社會層面的集會通知</b>——佛以宇宙級的物理震盪作為宣告大法的信號，打破空間的阻隔，三千大千世界一震，十方眾生同時知曉，這是佛陀說法的第一層準備——先讓該到的人都到齊。</td></tr><tr><td class="bh8p4-src">復次，《般若波羅蜜》中授諸菩薩記，當得作佛；佛為天地大主，是時地神大喜：「我今得主！」是故地動。譬如國主初立，臣民喜慶，皆稱萬歲，踊躍歌舞。</td><td>再者，在《般若波羅蜜經》中（佛陀）為諸位菩薩授記，將來必定能夠成佛；佛是天地間的大主宰，這時地神心中大為歡喜，說道：「我如今終於得到了主人！」因此而有地動。這就好比一國之君剛剛即位，臣民歡欣慶賀，都高呼萬歲，踴躍歌舞一般。</td><td class="bh8p4-guan"><b>目的二·地神歡喜——情感護法層面的慶賀</b>——與世俗災變所引發的恐懼截然不同，此一震動源於法喜；論主以「國主初立、臣民歌舞」作喻，點出這是情感／護法層面的歡慶而非凶兆，同樣是大地震動，世俗地震與佛法震動，意義恰恰相反。</td></tr><tr><td class="bh8p4-src">復次，三千大千世界眾生福德因緣故，有此大地山河樹木一切眾物，而眾生不知無常！是故佛以福德智慧大力，動此世界眾生福德，令知微薄，一切磨滅，皆歸無常。</td><td>再者，三千大千世界之所以有這片大地、山河、樹木等一切萬物，都是眾生福德因緣所感召而成的，然而眾生卻不知道這一切都是無常的！因此佛以福德與智慧的大力，震動這個世界，讓眾生知道自身福德其實微薄，一切終將磨滅，全都歸於無常。</td><td class="bh8p4-guan"><b>目的三·破除常見——一切磨滅皆歸無常</b>——眾生因自身福德因緣見大地山河樹木便執著它們為堅固、永恆，這是「不知無常」的常見；佛以震動直接粉碎凡夫對物質世界的依賴，這是三層目的中最深的一層，也正是「以動破堅」四字真正的著力點——山河大地本性是空，能被破的本來就不堅，此即性空義最直接的證明。</td></tr></tbody></table><p class="bh8p4-note">卷八第4品「六種震動」：東涌西沒六方位、上中下三品震動等級、二十八宿四神世俗基準線、因果相稱之緣起論、大集眾生地神歡喜破除常見三大目的。原文白話中觀三欄對照，含一問一答（經在最頂）。　中觀關鍵詞：以動破堅 因緣規模等於果報規模 依俗導真 大地本性是空</p></div></div>
+<script id="wy-bh8p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh8p4Btn"),BOX=document.getElementById("bh8p4Box"),MODAL=document.getElementById("bh8p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c8p4Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh8p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH8P4:END-->
 </body>
 </html>
